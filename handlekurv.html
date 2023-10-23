@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonta/css/fontawesome.css">
+    <link rel="stylesheet" href="css/fonta/css/solid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sko</title>
+</head>
+
+<body>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo">Logo</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="meny" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="handlekurv.html">Handlekurv</a></li>
+                    <li><a href="produkt.html">Produkter</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section class="handlekurv">
+                <h1>Handlekurven er tom. Gå til produkter for å legge til.</h1>
+            </section>
+            <section class="flex-section">
+                <h2>Populære produkter:</h2>
+                <article>
+                    <h2>Sneakers</h2>
+                    <a href="produkt.html"><img src="img/pixabay.com-vectorsshoes-footwear-sneakers-fashion-153310.png" alt="Herre"></a>
+                    <p>Eksempelbildet hentet fra <a href="https://pixabay.com/vectors/shoes-footwear-sneakers-fashion-153310/">Pixabay</a></p>
+                </article>
+                <article>
+                    <h2>Skopuss</h2>
+                    <a href="produkt.html"><img src="img/pixabay.com-photosshoeshine-shoe-polish-shine-brush-72477.jpg" alt="Damer"></a>
+                    <p>Eksempelbildet hentet fra <a href="https://pixabay.com/photos/shoeshine-shoe-polish-shine-brush-72477/">Pixabay</a></p>
+                </article>
+                <article>
+                    <h2>Barnesko</h2>
+                    <a href="produkt.html"><img src="img/pixabay.com-photosbooties-baby-girl-clothes-pink-2047596.jpg" alt="Barn"></a>
+                    <p>Eksempelbildet hentet fra <a href="https://pixabay.com/photos/booties-baby-girl-clothes-pink-2047596/">Pixabay</a></p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Meny inspirert av <a href="https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/index.html">forelesning</a>, og dens <a href="https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/style.css">stil</a>.</p>
+        </footer>
+    </div>
+    <script>
+        let x = document.querySelector(".navbar")
+        document.getElementById("meny").addEventListener("click", (e) => {
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar"
+            }
+        })
+    </script>
+</body>
+</html>
